@@ -6,7 +6,7 @@ function layDanhSachSanPham() {
   promise.then(function (result) {
     //Hiển thị lên UI
     hienThiUI(result.data);
-    hienThiDashboard(result.data);
+    // hienThiDashboard(result.data);
   });
   promise.catch(function (error) {
     console.log(error);
@@ -33,7 +33,7 @@ function hienThiUI(mangSP) {
                   <p>Camera trước: ${sp.frontCamera}</p>
                   <p>${sp.backCamera}</p>
                 </div>
-                <button class="btn-buy">THÊM VÀO GIỎ HÀNG</button>
+                <button class="btn-buy" id="addCart">THÊM VÀO GIỎ HÀNG</button>
               </div>
             </div>
     `;

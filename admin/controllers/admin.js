@@ -15,12 +15,11 @@ layDanhSachSanPham();
 
 function hienThiDashboard(mangSP) {
     var content = "";
-    var count = 1;
   
     mangSP.map(function (sp) {
       content += `
         <tr>
-        <td>${count++}</td>
+        <td>${sp.id}</td>
         <td>${sp.name}</td>
         <td><img src="${sp.img}" alt="" style="width: 100px"></td>
         <td>$${sp.price}</td>
