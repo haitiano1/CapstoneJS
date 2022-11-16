@@ -25,6 +25,8 @@
 <body>
 
     <div class="container">
+            <!-- <a href="/admin/views/table.html">Trang quản trị admin</a> -->
+
         <header class="nav-fixed">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <a class="navbar-brand" href="#">
@@ -42,14 +44,14 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">HOME</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#">ABOUT US</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">SHOP</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                            <a class="nav-link" href="/admin/views/dashboard.html"> TRANG QUẢN TRỊ ADMIN</a>
                         </li>
                     </ul>
                     <a class="ml-2 cart-icon">
@@ -92,7 +94,6 @@
         <div class="title">
             <h2>Featured <span>Products</span> </h2>
         </div>
-        ok bạn
 
         <div class="row row-cols-5 row-cols-md-3 row-cols-lg-5 text-center section-pt" id="product-list"></div>
 
@@ -114,10 +115,10 @@
 <!-- AXIOS -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-    <script src="/app/models/SanPham.js"></script>
-    <script src="/app/services/SanPhamService.js"></script>
+    <script src="/customer/models/SanPham.js"></script>
+    <script src="/customer/services/SanPhamService.js"></script>
 
-    <script src="/app/controllers/main.js"></script>
+    <script src="/customer/controllers/main.js"></script>
 </body>
 
 </html>
