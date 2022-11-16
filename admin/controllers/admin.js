@@ -29,7 +29,7 @@ function hienThiDashboard(mangSP) {
         <td>${sp.screen}</td>
         <td>${sp.desc}</td>
         <td>${sp.type}</td>
-        <td>
+        <td class="d-flex">
             <button class="btn btn-danger mr-2" >Xóa</button>
             <button class="btn btn-success" >Xem</button>
         </td>
