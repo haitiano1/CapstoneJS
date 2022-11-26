@@ -1,5 +1,4 @@
-function SanPham(id, name, price,screen,backCamera,frontCamera,img,desc,type){
-    this.id = id;
+function SanPham( name, price,screen,backCamera,frontCamera,img,desc,type){
     this.name = name;
     this.price = price;
     this.screen = screen;
