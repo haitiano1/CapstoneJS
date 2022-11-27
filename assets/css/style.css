@@ -125,6 +125,10 @@ header {
     .navbar {
         padding: 15px 80px;
     }
+    .nav-list {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
     .nav-item-mobile {
         display: none;

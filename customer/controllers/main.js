@@ -57,7 +57,13 @@ function hienThiUI(mangSP) {
   });
   document.querySelector("#product-list").innerHTML = content;
 }
-getELE("cart-btn").onclick = function () {
+getELE("cart-btn-mobile").onclick = function () {
+  getLocalStorage();
+  hienThiGioHang();
+  tinhTien();
+};
+
+getELE("cart-btn-laptop").onclick = function () {
   getLocalStorage();
   hienThiGioHang();
   tinhTien();
@@ -76,6 +82,7 @@ function hienThiGioHang() {
 
   if (cartSP.length == 0) {
     cartContent = "Dường như giỏ hàng của bạn đang trống";
+    getELE("pay").disabled = true;
   } else {
     cartSP.map(function (sp) {
       cartContent += `
@@ -102,6 +109,7 @@ function hienThiGioHang() {
             </tbody>
       `;
     });
+    getELE("pay").disabled = false;
   }
   document.querySelector(".table-striped").innerHTML = cartContent;
 }
