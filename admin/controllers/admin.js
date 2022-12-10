@@ -77,7 +77,7 @@ function themSanPham() {
     })
       .catch(function (error) {
         // console.log(error);
-        alert("thêm không thành công")
+        
       })
   }
 }
